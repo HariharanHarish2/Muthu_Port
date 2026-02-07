@@ -11,7 +11,7 @@ const Projects = () => {
       description: 'A full-stack e-commerce solution with React and Node.js',
       image: 'https://via.placeholder.com/400x300',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: 'https://github.com',
+      github: 'https://github.com/MuthazhaganDev',
       demo: 'https://demo.com'
     },
     {
@@ -20,7 +20,7 @@ const Projects = () => {
       description: 'A collaborative task management application',
       image: 'https://via.placeholder.com/400x300',
       technologies: ['React', 'Firebase', 'Material-UI'],
-      github: 'https://github.com',
+      github: 'https://github.com/MuthazhaganDev',
       demo: 'https://demo.com'
     },
     {
@@ -29,7 +29,7 @@ const Projects = () => {
       description: 'Real-time weather information with beautiful visualizations',
       image: 'https://via.placeholder.com/400x300',
       technologies: ['React', 'D3.js', 'OpenWeather API'],
-      github: 'https://github.com',
+      github: 'https://github.com/MuthazhaganDev',
       demo: 'https://demo.com'
     }
   ]
@@ -94,51 +94,51 @@ const Projects = () => {
               exit={{ opacity: 0 }}
               onClick={() => setSelectedProject(null)}
             >
-            <motion.div
-              className="glass rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <img
-                src={selectedProject.image}
-                alt={selectedProject.title}
-                className="w-full h-64 object-cover rounded-t-3xl"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-white mb-4">{selectedProject.title}</h3>
-                <p className="text-white/80 mb-6">{selectedProject.description}</p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {selectedProject.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="bg-white/20 text-white px-3 py-1 rounded-full text-sm"
+              <motion.div
+                className="glass rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.8, opacity: 0 }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="w-full h-64 object-cover rounded-t-3xl"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-white mb-4">{selectedProject.title}</h3>
+                  <p className="text-white/80 mb-6">{selectedProject.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {selectedProject.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="bg-white/20 text-white px-3 py-1 rounded-full text-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex space-x-4">
+                    <motion.a
+                      href={selectedProject.github}
+                      className="bg-white text-[#667eea] px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                     >
-                      {tech}
-                    </span>
-                  ))}
+                      GitHub
+                    </motion.a>
+                    <motion.a
+                      href={selectedProject.demo}
+                      className="border border-white text-white px-4 py-2 rounded-lg hover:bg-white hover:text-[#667eea] transition-all"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Live Demo
+                    </motion.a>
+                  </div>
                 </div>
-                <div className="flex space-x-4">
-                  <motion.a
-                    href={selectedProject.github}
-                    className="bg-white text-[#667eea] px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    GitHub
-                  </motion.a>
-                  <motion.a
-                    href={selectedProject.demo}
-                    className="border border-white text-white px-4 py-2 rounded-lg hover:bg-white hover:text-[#667eea] transition-all"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Live Demo
-                  </motion.a>
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
             </motion.div>
           )}
         </AnimatePresence>

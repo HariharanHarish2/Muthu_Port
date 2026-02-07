@@ -31,7 +31,7 @@ const Home = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 whileHover={{ scale: 1.05 }}
               >
-                Your Name
+                Muthazhagan
               </motion.span>
             </motion.h1>
 

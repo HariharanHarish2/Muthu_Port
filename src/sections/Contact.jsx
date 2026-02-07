@@ -28,8 +28,8 @@ const Contact = () => {
     {
       icon: '📧',
       title: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com'
+      value: 'voicefactmuthu@gmail.com',
+      href: 'mailto:voicefactmuthu@gmail.com'
     },
     {
       icon: '📱',
@@ -40,26 +40,26 @@ const Contact = () => {
     {
       icon: '📍',
       title: 'Location',
-      value: 'Your City, Country',
+      value: 'Chennai, India',
       href: '#'
     },
     {
       icon: '💼',
       title: 'LinkedIn',
-      value: 'linkedin.com/in/yourprofile',
-      href: 'https://linkedin.com/in/yourprofile'
+      value: 'linkedin.com/in/voicefactmuthu',
+      href: 'https://linkedin.com/in/voicefactmuthu'
     },
     {
       icon: '🐙',
       title: 'GitHub',
-      value: 'github.com/yourusername',
-      href: 'https://github.com/yourusername'
+      value: 'github.com/MuthazhaganDev',
+      href: 'https://github.com/MuthazhaganDev'
     },
     {
       icon: '🐦',
       title: 'Twitter',
-      value: '@yourhandle',
-      href: 'https://twitter.com/yourhandle'
+      value: '@voicefactmuthu',
+      href: 'https://twitter.com/voicefactmuthu'
     }
   ]
 
@@ -99,6 +99,8 @@ const Contact = () => {
                 <motion.a
                   key={link.title}
                   href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="glass rounded-2xl p-6 card-3d group"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}

@@ -94,6 +94,24 @@ const About = () => {
               or enjoying outdoor activities. I believe in continuous learning and staying up-to-date with the latest
               trends in web development.
             </motion.p>
+
+            <motion.div
+              className="mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.9 }}
+              viewport={{ once: true }}
+            >
+              <motion.a
+                href="/muthazhagan.pdf"
+                download="Muthazhagan_Resume.pdf"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#F97316] to-[#FB923C] text-white rounded-xl font-medium shadow-lg hover:shadow-orange-500/40 transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span className="mr-2">📄</span> Download CV
+              </motion.a>
+            </motion.div>
             <motion.div
               className="grid grid-cols-2 gap-6"
               initial={{ opacity: 0, y: 20 }}

@@ -10,8 +10,8 @@ const Navbar = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a')
-    link.href = '/resume.pdf'
-    link.download = 'Your_Name_Resume.pdf'
+    link.href = '/muthazhagan.pdf'
+    link.download = 'Muthazhagan_Resume.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)

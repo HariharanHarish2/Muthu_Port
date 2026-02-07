@@ -25,14 +25,16 @@ const Footer = () => {
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             {[
-              { name: 'GitHub', url: 'https://github.com', icon: '🐙' },
-              { name: 'LinkedIn', url: 'https://linkedin.com', icon: '💼' },
-              { name: 'Twitter', url: 'https://twitter.com', icon: '🐦' },
-              { name: 'Email', url: 'mailto:your.email@example.com', icon: '📧' }
+              { name: 'GitHub', url: 'https://github.com/MuthazhaganDev', icon: '🐙' },
+              { name: 'LinkedIn', url: 'https://linkedin.com/in/voicefactmuthu', icon: '💼' },
+              { name: 'Twitter', url: 'https://twitter.com/voicefactmuthu', icon: '🐦' },
+              { name: 'Email', url: 'mailto:voicefactmuthu@gmail.com', icon: '📧' }
             ].map((social) => (
               <motion.a
                 key={social.name}
                 href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="glass rounded-2xl p-4 text-white/80 hover:text-white transition-all duration-200 card-3d"
                 whileHover={{
                   scale: 1.1,
