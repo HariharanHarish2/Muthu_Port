@@ -34,7 +34,7 @@ const Contact = () => {
     {
       icon: '📱',
       title: 'Phone',
-      value: '+1 (555) 123-4567',
+      value: '+91 8270264342',
       href: 'tel:+15551234567'
     },
     {
@@ -47,7 +47,7 @@ const Contact = () => {
       icon: '💼',
       title: 'LinkedIn',
       value: 'linkedin.com/in/voicefactmuthu',
-      href: 'https://linkedin.com/in/voicefactmuthu'
+      href: 'https://www.linkedin.com/in/muthumurugan007?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
       icon: '🐙',
@@ -59,7 +59,7 @@ const Contact = () => {
       icon: '🐦',
       title: 'Twitter',
       value: '@voicefactmuthu',
-      href: 'https://twitter.com/voicefactmuthu'
+      href: ' https://x.com/Muthu0102v?t=bdAizqThxYtIjKdLaaLOJQ&s=08'
     }
   ]
 

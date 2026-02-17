@@ -31,7 +31,7 @@ const Navbar = () => {
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-4">
-            {['Home', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
+            {['Home', 'About', 'Skills', 'Tools', 'Projects', 'Experience', 'Contact'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -80,7 +80,7 @@ const Navbar = () => {
           transition={{ duration: 0.2 }}
         >
           <div className="px-4 pt-2 pb-3 space-y-2">
-            {['Home', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
+            {['Home', 'About', 'Skills', 'Tools', 'Projects', 'Experience', 'Contact'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}

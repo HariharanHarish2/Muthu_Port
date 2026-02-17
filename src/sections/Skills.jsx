@@ -5,18 +5,16 @@ import { OrbitControls, Float, Sphere, Box } from '@react-three/drei'
 
 const Skills = () => {
   const skills = [
-    { name: 'React', level: 90, color: '#61dafb' },
-    { name: 'JavaScript', level: 85, color: '#f7df1e' },
-    { name: 'Node.js', level: 80, color: '#68a063' },
-    { name: 'Python', level: 75, color: '#3776ab' },
+    { name: 'HTML', level: 90, color: '#e34f26' },
     { name: 'CSS', level: 85, color: '#1572b6' },
-    { name: 'HTML', level: 90, color: '#e34f26' }
+    { name: 'Java (basic)', level: 70, color: '#ed8b00' },
+    { name: 'Python', level: 75, color: '#3776ab' }
   ]
 
   const SkillIcon = ({ skill, index }) => {
     return (
       <Float speed={1.4} rotationIntensity={1} floatIntensity={2}>
-        <group position={[index * 3 - 7.5, 0, 0]}>
+        <group position={[index * 2.5 - 3.75, 0, 0]}>
           <Sphere args={[0.5, 32, 32]}>
             <meshStandardMaterial color={skill.color} />
           </Sphere>
@@ -44,8 +42,8 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-5xl font-bold text-white mb-4 drop-shadow-lg">Skills & Technologies</h2>
-          <p className="text-xl text-white/80">My technical expertise</p>
+          <h2 className="text-5xl font-bold text-white mb-4 drop-shadow-lg">Skills</h2>
+          <p className="text-xl text-white/80">Technical expertise</p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
